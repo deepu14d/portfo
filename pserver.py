@@ -23,7 +23,7 @@ def write_csv(data):
 		Email = data['email']
 		Message = data['message']
 		csv_file = csv.writer(db2, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-		csv_file.writerow([Name,Email,Message])
+		csv_file.writerow([Name, Email, Message])
 
 @app.route('/contact_me', methods=['POST', 'GET'])
 def contact_me():
